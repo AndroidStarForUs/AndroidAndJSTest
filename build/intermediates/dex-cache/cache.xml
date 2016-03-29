@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android3\workspace\CircleProgress\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="48c94ae70fa65718b382098237806a5909bb096e">
+        <dex dex="D:\Android3\workspace\CircleProgress\build\intermediates\pre-dexed\debug\android-support-v4_888c50e6b69f1989c0fb2507b06724cba30c7aac.jar" />
+    </item>
+
+</items>

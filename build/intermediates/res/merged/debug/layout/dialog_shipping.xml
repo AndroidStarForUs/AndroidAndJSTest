@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dialog_list_padding_left_right"
+    android:paddingRight="@dimen/dialog_list_padding_left_right"
+    android:paddingBottom="@dimen/dialog_shipping_padding_bottom"
+     >
+
+    <RelativeLayout
+        android:id="@+id/relative_express_company"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_list_shipping_line_height"
+        android:layout_marginTop="@dimen/relative_express_company_margin_top" >
+
+        <TextView
+            android:id="@+id/text_express_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="快递公司：" />
+
+        <EditText
+            android:id="@+id/et_express_company"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/et_express_company_height"
+            android:layout_toRightOf="@id/text_express_company"
+            android:layout_marginLeft="@dimen/et_express_company_margin_left"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/dialog_shipping_et_text_shape" />
+        <ImageView 
+            android:id="@+id/dialog_shipping_indictor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shipping_indictor"
+            android:layout_alignRight="@id/et_express_company"
+            android:layout_alignTop="@id/et_express_company"
+            android:layout_alignBottom="@id/et_express_company"
+            android:layout_marginRight="@dimen/dialog_shipping_indictor_margin_right"
+            />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/relative_express_odd_number"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_list_shipping_line_height"
+        android:layout_below="@id/relative_express_company"
+        android:layout_marginTop="@dimen/relative_express_company_margin_top" >
+
+        <TextView
+            android:id="@+id/text_express_odd_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="快递单号：" />
+
+        <EditText
+            android:id="@+id/et_express_odd_number"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/et_express_company_height"
+            android:layout_toRightOf="@id/text_express_odd_number"
+            android:layout_marginLeft="@dimen/et_express_company_margin_left"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dialog_shipping_et_text_shape" />
+    </RelativeLayout>
+    <Button 
+        android:id="@+id/confirm_btn"
+        android:layout_width="@dimen/btn_confirm_submit_width"
+        android:layout_height="@dimen/btn_confirm_submit_height"
+        android:textSize="@dimen/btn_confirm_submit_text_size"
+        android:layout_below="@id/relative_express_odd_number"
+        android:layout_marginTop="@dimen/dialog_shipping_confim_btn_margin_top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/order_detail_btn_shape"
+        android:text="确认提交"
+        />
+</RelativeLayout>

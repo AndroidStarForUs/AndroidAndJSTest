@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btntextcolor">#ff1E90FF</color><!--dialog中按钮字体颜色 -->
+        <color name="dialog_shipping_et_text_line_color">#BFBFBF</color>
+</resources>
